@@ -1,10 +1,16 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import { Test } from './style'
+
+import { GlobalStyles } from './globalStyles'
+import { Layout } from './layout'
+
 
 ReactDOM.render(
-  <Test>
-    <h1>Test</h1>
-  </Test>,
+  <>
+    <GlobalStyles />
+    <Layout>
+      <h1>Test</h1>
+    </Layout>
+  </>,
   document.getElementById('app')
 )
